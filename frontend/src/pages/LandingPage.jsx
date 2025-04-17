@@ -1,7 +1,9 @@
 import React from 'react';
 import { ChevronRight, BarChart2, Users, TrendingUp, Instagram } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-white">
       {/* Navigation */}
@@ -12,9 +14,9 @@ const LandingPage = () => {
         <div className="hidden md:flex space-x-8">
           <a href="#features" className="text-gray-600 hover:text-indigo-600 transition">Features</a>
           <a href="#insights" className="text-gray-600 hover:text-indigo-600 transition">Insights</a>
-          <a href="#about" className="text-gray-600 hover:text-indigo-600 transition">About</a>
+          <a className="text-gray-600 hover:text-indigo-600 transition" onClick={() => navigate('/dashboard')}>Analysis Dashboard</a>
         </div>
-        <button className="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow-md">
+        <button className="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow-md" onClick={() => navigate('/predict')}>
           Get Started
         </button>
       </nav>
@@ -29,12 +31,12 @@ const LandingPage = () => {
             Analysis of social media strategies from leading Indian Quick Commerce companies to help new ventures succeed.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row">
-            <button className="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition shadow-md flex items-center justify-center mb-4 sm:mb-0 sm:mr-4">
-              View Demo
+            <button className="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition shadow-md flex items-center justify-center mb-4 sm:mb-0 sm:mr-4" onClick={() => navigate('/dashboard')}>
+              View Dashboard
               <ChevronRight className="ml-2" size={20} />
             </button>
-            <button className="border-2 border-indigo-600 text-indigo-600 px-8 py-3 rounded-lg hover:bg-indigo-50 transition">
-              Learn More
+            <button className="border-2 border-indigo-600 text-indigo-600 px-8 py-3 rounded-lg hover:bg-indigo-50 transition" onClick={() => navigate('/predict')}>
+              Check Virality
             </button>
           </div>
         </div>
@@ -192,7 +194,7 @@ const LandingPage = () => {
               <div>
                 <h4 className="text-lg font-semibold mb-4">Company</h4>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-400 hover:text-white transition">About</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition" >About</a></li>
                   <li><a href="#" className="text-gray-400 hover:text-white transition">Blog</a></li>
                   <li><a href="#" className="text-gray-400 hover:text-white transition">Careers</a></li>
                 </ul>

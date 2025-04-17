@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { BarChart2, Instagram, Loader, AlertCircle, CheckCircle } from 'lucide-react';
 import api from '../api';
+import { useNavigate } from 'react-router-dom';
 
 const PredictionPage = () => {
+    const navigate = useNavigate();
   const [formData, setFormData] = useState({
     likesViewsRatio: 0.5,
     mediaType: 1,
@@ -108,8 +110,7 @@ const PredictionPage = () => {
         </div>
         <div className="hidden md:flex space-x-8">
           <a href="/" className="text-gray-600 hover:text-indigo-600 transition">Home</a>
-          <a href="#features" className="text-gray-600 hover:text-indigo-600 transition">Features</a>
-          <a href="#insights" className="text-gray-600 hover:text-indigo-600 transition">Insights</a>
+          <a onClick={() => navigate('/dashboard')} className="text-gray-600 hover:text-indigo-600 transition">Insights</a>
         </div>
       </nav>
 
