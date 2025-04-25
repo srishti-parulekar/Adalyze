@@ -4,7 +4,6 @@
 
 **Adalyze** is a data-driven, predictive analytics tool built to analyze and enhance the performance of creative social media advertisements, especially in the **quick commerce** domain (e.g., Blinkit, Zepto, Swiggy Instamart). Combining machine learning, real-time trend insights, and Power BI dashboards, Adalyze empowers brands to optimize content strategies, improve ROI, and maximize audience engagement.
 
----
 
 ## 📌 Features
 
@@ -12,7 +11,6 @@
 - 💰 **Sales Intelligence Module**: Connects ad spend to user engagement, demographics, and inferred ROI.
 - 🤖 **Viral Post Predictor Tool**: Uses ML (Random Forest & Logistic Regression) to forecast virality.
 
----
 
 ## 🎯 Objectives
 
@@ -21,7 +19,6 @@
 - Enable **real-time trend adaptation** using Google Trends data.
 - Build an intuitive Power BI dashboard for **executive decision-making**.
 
----
 
 ## 🧠 Technologies Used
 
@@ -32,7 +29,6 @@
 - **Pandas, NumPy, Seaborn** – Data cleaning and EDA.
 - **SQL** – Data filtering & optimization.
 
----
 
 ## 🛠️ Workflow
 
@@ -58,7 +54,6 @@
    - Three Power BI dashboards
    - Integrated into a central web interface
 
----
 
 ## 📊 Dashboards Breakdown
 
@@ -77,7 +72,6 @@
 - Ad cost vs engagement
 - Target group analysis
 
----
 
 ## 🔮 Viral Post Predictor Tool
 
@@ -91,7 +85,7 @@ An AI-powered simulator to forecast whether a given post will go viral, based on
 
 ➡️ Helps teams **optimize before posting**, not after.
 
----
+
 
 ## 📈 Future Enhancements
 
@@ -101,7 +95,6 @@ An AI-powered simulator to forecast whether a given post will go viral, based on
 - Adaptive ML feedback loop
 - Smart ad budget allocator
 
----
 
 ## 🏁 Conclusion
 
