@@ -1,5 +1,5 @@
 # 📊 Adalyze - Predictive Analytics for Social Media Campaigns
-
+ 
 ## 🚀 Overview
 
 **Adalyze** is a data-driven, predictive analytics tool built to analyze and enhance the performance of creative social media advertisements, especially in the **quick commerce** domain (e.g., Blinkit, Zepto, Swiggy Instamart). Combining machine learning, real-time trend insights, and Power BI dashboards, Adalyze empowers brands to optimize content strategies, improve ROI, and maximize audience engagement.
